@@ -1,3 +1,4 @@
+<!-- ...existing code... -->
 <!DOCTYPE html>
 <!--
 /*
@@ -11,16 +12,16 @@
  * https://opensource.org/licenses/MIT
  */
 -->
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <!--[if IE]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <![endif]-->
     <meta charset="utf-8" />
-    <title>blueimp Gallery</title>
+    <title>Galeria blueimp</title>
     <meta
       name="description"
-      content="blueimp Gallery is a touch-enabled, responsive and customizable image and video gallery, carousel and lightbox, optimized for both mobile and desktop web browsers. It features swipe, mouse and keyboard navigation, transition effects, slideshow functionality, fullscreen support and on-demand content loading and can be extended to display additional content types."
+      content="blueimp Gallery é uma galeria de imagens e vídeos sensível ao toque, responsiva e personalizável, com carrossel e lightbox, otimizada para navegadores móveis e desktop. Inclui navegação por swipe, mouse e teclado, efeitos de transição, slideshow, suporte a tela cheia e carregamento sob demanda."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/blueimp-gallery.css" />
@@ -31,78 +32,78 @@
   <body>
     <h1>blueimp Gallery</h1>
     <p>
-      <a href="https://github.com/blueimp/Gallery">blueimp Gallery</a> is a
-      touch-enabled, responsive and customizable image &amp; video gallery,
-      carousel and lightbox, optimized for both mobile and desktop web browsers.
+      <a href="https://github.com/blueimp/Gallery">blueimp Gallery</a> é uma
+      galeria de imagens e vídeos sensível ao toque, responsiva e personalizável,
+      com carrossel e lightbox, otimizada para navegadores móveis e desktop.
     </p>
     <p>
-      It features swipe, mouse and keyboard navigation, transition effects,
-      slideshow functionality, fullscreen support and on-demand content loading
-      and can be extended to display additional content types.
+      Possui navegação por swipe, mouse e teclado, efeitos de transição,
+      slideshow, suporte a tela cheia e carregamento sob demanda, e pode ser
+      estendida para exibir tipos de conteúdo adicionais.
     </p>
     <ul id="navigation">
       <li>
-        <a href="https://github.com/blueimp/Gallery/releases">Download</a>
+        <a href="https://github.com/blueimp/Gallery/releases">Baixar</a>
       </li>
-      <li><a href="https://github.com/blueimp/Gallery">Source Code</a></li>
+      <li><a href="https://github.com/blueimp/Gallery">Código-fonte</a></li>
       <li>
         <a href="https://github.com/blueimp/Gallery/blob/master/README.md"
-          >Documentation</a
+          >Documentação</a
         >
       </li>
       <li><a href="https://blueimp.net">&copy; Sebastian Tschan</a></li>
     </ul>
-    <h2>Carousel image gallery</h2>
+    <h2>Galeria de imagens em carrossel</h2>
     <!-- The Gallery as inline carousel -->
     <div
       id="blueimp-image-carousel"
       class="blueimp-gallery blueimp-gallery-carousel"
-      aria-label="image carousel"
+      aria-label="carrossel de imagens"
     >
       <div class="slides" aria-live="off"></div>
       <h3 class="title"></h3>
       <a
         class="prev"
         aria-controls="blueimp-image-carousel"
-        aria-label="previous slide"
+        aria-label="slide anterior"
       ></a>
       <a
         class="next"
         aria-controls="blueimp-image-carousel"
-        aria-label="next slide"
+        aria-label="próximo slide"
       ></a>
       <a
         class="play-pause"
         aria-controls="blueimp-image-carousel"
-        aria-label="play slideshow"
+        aria-label="reproduzir/slideshow"
         aria-pressed="true"
         role="button"
       ></a>
     </div>
-    <h2>Carousel video gallery</h2>
+    <h2>Galeria de vídeos em carrossel</h2>
     <!-- The Gallery as inline carousel -->
     <div
       id="blueimp-video-carousel"
       class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel"
-      aria-label="video carousel"
+      aria-label="carrossel de vídeos"
     >
       <div class="slides" aria-live="polite"></div>
       <h3 class="title"></h3>
       <a
         class="prev"
         aria-controls="blueimp-video-carousel"
-        aria-label="previous slide"
+        aria-label="slide anterior"
       ></a>
       <a
         class="next"
         aria-controls="blueimp-video-carousel"
-        aria-label="next slide"
+        aria-label="próximo slide"
       ></a>
     </div>
-    <h2>Lightbox image gallery</h2>
+    <h2>Galeria de imagens (lightbox)</h2>
     <p>
       <input type="checkbox" id="fullscreen" />
-      <label for="fullscreen">Fullscreen</label>
+      <label for="fullscreen">Tela cheia</label>
     </p>
     <!-- The container for the list of example images -->
     <div id="links" class="links"></div>
@@ -110,7 +111,7 @@
     <div
       id="blueimp-gallery"
       class="blueimp-gallery"
-      aria-label="image gallery"
+      aria-label="galeria de imagens"
       aria-modal="true"
       role="dialog"
     >
@@ -119,31 +120,193 @@
       <a
         class="prev"
         aria-controls="blueimp-gallery"
-        aria-label="previous slide"
+        aria-label="slide anterior"
         aria-keyshortcuts="ArrowLeft"
       ></a>
       <a
         class="next"
         aria-controls="blueimp-gallery"
-        aria-label="next slide"
+        aria-label="próximo slide"
         aria-keyshortcuts="ArrowRight"
       ></a>
       <a
         class="close"
         aria-controls="blueimp-gallery"
-        aria-label="close"
+        aria-label="fechar"
         aria-keyshortcuts="Escape"
       ></a>
       <a
         class="play-pause"
         aria-controls="blueimp-gallery"
-        aria-label="play slideshow"
+        aria-label="reproduzir/slideshow"
         aria-keyshortcuts="Space"
         aria-pressed="false"
         role="button"
       ></a>
       <ol class="indicator"></ol>
     </div>
+    <!-- ...existing code... -->
+    <script src="js/blueimp-helper.js"></script>
+    <script src="js/blueimp-gallery.js"></script>
+    <script src="js/blueimp-gallery-fullscreen.js"></script>
+    <script src="js/blueimp-gallery-indicator.js"></script>
+    <script src="js/blueimp-gallery-video.js"></script>
+    <script src="js/blueimp-gallery-vimeo.js"></script>
+    <script src="js/blueimp-gallery-youtube.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/jquery.blueimp-gallery.js"></script>
+    <script src="js/demo/demo.js"></script>
+  </body>
+</html>
+```// filepath: /workspaces/Gallery/index.html
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<!--
+/*
+ * blueimp Gallery Demo
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * https://opensource.org/licenses/MIT
+ */
+-->
+<html lang="pt-BR">
+  <head>
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta charset="utf-8" />
+    <title>Galeria blueimp</title>
+    <meta
+      name="description"
+      content="blueimp Gallery é uma galeria de imagens e vídeos sensível ao toque, responsiva e personalizável, com carrossel e lightbox, otimizada para navegadores móveis e desktop. Inclui navegação por swipe, mouse e teclado, efeitos de transição, slideshow, suporte a tela cheia e carregamento sob demanda."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/blueimp-gallery.css" />
+    <link rel="stylesheet" href="css/blueimp-gallery-indicator.css" />
+    <link rel="stylesheet" href="css/blueimp-gallery-video.css" />
+    <link rel="stylesheet" href="css/demo/demo.css" />
+  </head>
+  <body>
+    <h1>blueimp Gallery</h1>
+    <p>
+      <a href="https://github.com/blueimp/Gallery">blueimp Gallery</a> é uma
+      galeria de imagens e vídeos sensível ao toque, responsiva e personalizável,
+      com carrossel e lightbox, otimizada para navegadores móveis e desktop.
+    </p>
+    <p>
+      Possui navegação por swipe, mouse e teclado, efeitos de transição,
+      slideshow, suporte a tela cheia e carregamento sob demanda, e pode ser
+      estendida para exibir tipos de conteúdo adicionais.
+    </p>
+    <ul id="navigation">
+      <li>
+        <a href="https://github.com/blueimp/Gallery/releases">Baixar</a>
+      </li>
+      <li><a href="https://github.com/blueimp/Gallery">Código-fonte</a></li>
+      <li>
+        <a href="https://github.com/blueimp/Gallery/blob/master/README.md"
+          >Documentação</a
+        >
+      </li>
+      <li><a href="https://blueimp.net">&copy; Sebastian Tschan</a></li>
+    </ul>
+    <h2>Galeria de imagens em carrossel</h2>
+    <!-- The Gallery as inline carousel -->
+    <div
+      id="blueimp-image-carousel"
+      class="blueimp-gallery blueimp-gallery-carousel"
+      aria-label="carrossel de imagens"
+    >
+      <div class="slides" aria-live="off"></div>
+      <h3 class="title"></h3>
+      <a
+        class="prev"
+        aria-controls="blueimp-image-carousel"
+        aria-label="slide anterior"
+      ></a>
+      <a
+        class="next"
+        aria-controls="blueimp-image-carousel"
+        aria-label="próximo slide"
+      ></a>
+      <a
+        class="play-pause"
+        aria-controls="blueimp-image-carousel"
+        aria-label="reproduzir/slideshow"
+        aria-pressed="true"
+        role="button"
+      ></a>
+    </div>
+    <h2>Galeria de vídeos em carrossel</h2>
+    <!-- The Gallery as inline carousel -->
+    <div
+      id="blueimp-video-carousel"
+      class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel"
+      aria-label="carrossel de vídeos"
+    >
+      <div class="slides" aria-live="polite"></div>
+      <h3 class="title"></h3>
+      <a
+        class="prev"
+        aria-controls="blueimp-video-carousel"
+        aria-label="slide anterior"
+      ></a>
+      <a
+        class="next"
+        aria-controls="blueimp-video-carousel"
+        aria-label="próximo slide"
+      ></a>
+    </div>
+    <h2>Galeria de imagens (lightbox)</h2>
+    <p>
+      <input type="checkbox" id="fullscreen" />
+      <label for="fullscreen">Tela cheia</label>
+    </p>
+    <!-- The container for the list of example images -->
+    <div id="links" class="links"></div>
+    <!-- The Gallery as lightbox dialog -->
+    <div
+      id="blueimp-gallery"
+      class="blueimp-gallery"
+      aria-label="galeria de imagens"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="slides" aria-live="polite"></div>
+      <h3 class="title"></h3>
+      <a
+        class="prev"
+        aria-controls="blueimp-gallery"
+        aria-label="slide anterior"
+        aria-keyshortcuts="ArrowLeft"
+      ></a>
+      <a
+        class="next"
+        aria-controls="blueimp-gallery"
+        aria-label="próximo slide"
+        aria-keyshortcuts="ArrowRight"
+      ></a>
+      <a
+        class="close"
+        aria-controls="blueimp-gallery"
+        aria-label="fechar"
+        aria-keyshortcuts="Escape"
+      ></a>
+      <a
+        class="play-pause"
+        aria-controls="blueimp-gallery"
+        aria-label="reproduzir/slideshow"
+        aria-keyshortcuts="Space"
+        aria-pressed="false"
+        role="button"
+      ></a>
+      <ol class="indicator"></ol>
+    </div>
+    <!-- ...existing code... -->
     <script src="js/blueimp-helper.js"></script>
     <script src="js/blueimp-gallery.js"></script>
     <script src="js/blueimp-gallery-fullscreen.js"></script>
